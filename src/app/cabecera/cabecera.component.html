@@ -1,0 +1,49 @@
+<!--Navbar-->
+<mdb-navbar class="mb-4" SideClass="navbar navbar-expand-lg navbar-dark
+" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Portafolio</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a (click)="router.navigate(['/inicio'])" class="nav-link waves-light" mdbWavesEffect>Inicio<span class="caret"></span></a>
+      </li>
+      <li class="nav-item" dropdown>
+        <a (click)="router.navigate(['/estudios'])" mdbWavesEffect type="button" class="nav-link  waves-light" mdbWavesEffect>
+          Estudios<span class="caret"></span></a>
+      </li>
+      <li class="nav-item" dropdown>
+        <a (click)="this.router.navigate(['proyectos'])" class="nav-link  waves-light" mdbWavesEffect>
+          Proyectos<span class="caret"></span></a>
+      </li>
+
+      <li class="nav-item">
+        <a (click)="this.router.navigate(['/tecnologias'])" class="nav-link waves-light" mdbWavesEffect>Tecnologias</a>
+      </li>
+      <!-- Dropdown -->
+      <!-- <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Experiencia</a>
+
+      </li> -->
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item avatar dropdown" dropdown>
+        <a>
+          <img src="/assets/0.jfif" width="50" height="50" alt="" class="img-fluid rounded-circle z-depth-0"></a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+
+
+<!--/.Navbar-->

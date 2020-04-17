@@ -1,0 +1,117 @@
+<!-- Section: Blog v.1 -->
+<section class="my-5 mt-2 mb-4">
+
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class=" col-lg-5 mt-2">
+
+      <!-- Category -->
+      <!-- Post title -->
+
+      <!-- Excerpt -->
+      <!-- <button *ngFor="let dato of datosPersonales |keyvalue: originalOrder" type="button" class="btn btn-outline-info btn-rounded waves-effect"><strong>{{dato.key}}</strong> : {{dato.value}}</button> -->
+
+      <!-- Card Wider -->
+      <div class="card card-cascade wider">
+
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img class="card-img-top" src="/assets/personal.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+
+          <!-- Title -->
+          <h4 class="card-title"><strong>Diego Lusquiños Otero</strong></h4>
+          <!-- Subtitle -->
+          <h5 class="blue-text pb-2"><strong>Ingeniero Informático</strong></h5>
+          <!-- Text -->
+          <p class="card-text" *ngFor="let dato of datosPersonales |keyvalue: originalOrder"><strong>{{dato.key}}</strong> : {{dato.value}}</p>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Grid column -->
+    <div class=" col-lg-4 mt-2">
+
+      <!-- Card -->
+      <div class="card">
+
+
+
+        <!-- Card content -->
+        <div class="card-body">
+          <h3 class="font-weight-bold mb-3 mt-4"><strong>Breve descripción</strong></h3>
+
+          <!-- Text -->
+          <p class="card-text">Desde pequeño me apasiona el mundo de la informática, por ello cuando finalicé el Bachillerato, decidí iniciar la carrera de Ingeniería Informática.</p>
+           <p class="card-text"> Actualmente, estoy en el último año de carrera a punto de adentrarme en el mercado laboral. Gracias a mi formación (en la ingeniería y por mi propia cuenta), habilidades y capacidad de trabajo, creo que estoy capacitado para esta nueva aventura.</p>
+
+          <!-- Excerpt -->
+          <p>
+          </p>
+
+
+        </div>
+
+      </div>
+      <!-- Card -->
+
+    </div>
+    <div class=" col-lg-3 mt-2">
+    <!-- Card -->
+    <div class="card">
+
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+             alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!-- Card content -->
+      <div class="card-body">
+
+        <!-- Title -->
+        <h3 class="font-weight-bold mb-3 mt-4"><strong>Preferencia de trabajos</strong></h3>
+        <!-- Text -->
+        <p class="card-text">{{contenido.get("puesto1")}}</p>
+        <p class="card-text">{{contenido.get("puesto2")}}</p>
+        <p class="card-text">{{contenido.get("puesto3")}}</p>
+        <!-- Button -->
+        <a class="mt-4" href="https://www.linkedin.com/in/dlusquiños">
+        <button  type="button" class="btn btn-primary "><i class="fab fa-linkedin pr-1"></i>Linkedin</button>
+        </a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+
+  </div>
+  </div>
+  <!-- Grid row -->
+
+  <hr class="my-5">
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Blog v.1 -->

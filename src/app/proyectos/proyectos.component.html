@@ -1,0 +1,82 @@
+<!--Projects section v.4-->
+<section class="section margenPie mt-4">
+  <!-- Section description -->
+  <p class="white-text text-center w-responsive mx-auto mb-2">Esta sección contiene los proyectos realizados desde que empecé a programar</p>
+
+  <!--Grid row-->
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-12 mb-4">
+      <mdb-card style="background-image: url('/assets/padel.jpg')">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+            <h6 class="green-text"><i class="fas fa-table-tennis"></i><strong>{{this.padelData.indice}}</strong></h6>
+            <h3 class="card-title py-3 font-weight-bold"><strong>{{this.padelData.titulo}}</strong></h3>
+            <p class="pb-3">{{this.padelData.descripcion}}</p>
+            <a mdbBtn (click)="openModal(this.padelData)" color="success" rounded="true" mdbWavesEffect>
+              <mdb-icon fas icon="clone" class="left"></mdb-icon> Detalles
+            </a>
+          </div>
+        </div>
+      </mdb-card>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+      <mdb-card style="background-image: url('/assets/run.jpg')">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+            <h6 class="green-text"><i class="fas fa-running"></i><strong>{{this.carreraData.indice}}</strong></h6>
+            <h3 class="card-title py-3 font-weight-bold"><strong>{{this.carreraData.titulo}}</strong></h3>
+            <p class="pb-3">{{this.carreraData.descripcion}}</p>
+            <a mdbBtn (click)="openModal(this.carreraData)" color="success" rounded="true" mdbWavesEffect>
+              <mdb-icon fas icon="clone" class="left"></mdb-icon> Detalles
+            </a>
+          </div>
+        </div>
+      </mdb-card>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+      <mdb-card style="background-image: url('/assets/moda.png')">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+            <h6 class="purple-text"><i class="fas fa-tshirt"></i><strong>{{this.modaData.indice}}</strong></h6>
+            <h3 class="card-title py-3 font-weight-bold"><strong>{{this.modaData.titulo}}</strong></h3>
+            <p class="pb-3">{{this.modaData.descripcion}}</p>
+            <a mdbBtn (click)="openModal(this.modaData)" color="secondary" rounded="true" mdbWavesEffect>
+              <mdb-icon fas icon="clone" class="left"></mdb-icon> Detalles
+            </a>
+          </div>
+        </div>
+      </mdb-card>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-12 mb-4">
+      <mdb-card style="background-image: url('/assets/nube.jpg')">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+            <h6 class="teal-text"><i class="fa fa-cloud-download-alt"></i><strong>{{this.driveData.indice}}</strong></h6>
+            <h3 class="card-title py-3 font-weight-bold"><strong>{{this.driveData.titulo}}</strong></h3>
+            <p class="pb-3">{{this.driveData.descripcion}}</p>
+            <a mdbBtn (click)="openModal(this.driveData)" color="default" rounded="true" mdbWavesEffect>
+              <mdb-icon fas icon="clone" class="left"></mdb-icon> Detalles
+            </a>
+          </div>
+        </div>
+      </mdb-card>
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+<!--Projects section v.4-->
+
